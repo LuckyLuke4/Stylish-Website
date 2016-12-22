@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="Navbar.css" />
+    <link rel="stylesheet" type="text/css" href="Memory.css" />
+    <script src="Memory.js"></script>
+</head>
+<body>
+    <ul class="navbar">
+        <li class="navbar"><a href="HtmlPage.html">Home</a></li>
+        <li class="navbar"><a class="active" href="Memory.html">Memory</a></li>
+        <li class="navbar"><a href="HtmlPage.html">Such Link</a></li>
+        <li class="navbar"><a href="HtmlPage.html">Very Link</a></li>
+    </ul>
+    <div id="wrapper">
+
+        <div id="info">
+            <h1>Memory Page</h1>
+            <h2 id="p0">[][][]</h2> <p id="p2">0</p>
+            <button onclick="memoryStart()">Start memory</button>
+        </div>
+        
+         <ul class="memory" id="row1">
+            <li class="memory" id="square1" onclick="memoryClick(this)"></li>
+            <li class="memory" id="square2" onclick="memoryClick(this)"></li>
+            <li class="memory" id="square3" onclick="memoryClick(this)"></li>
+        </ul>
+        <ul class="memory" id="row2">
+            <li class="memory" id="square4" onclick="memoryClick(this)"></li>
+            <li class="memory" id="square5" onclick="memoryClick(this)"></li>
+            <li class="memory" id="square6" onclick="memoryClick(this)"></li>
+        </ul>
+        <p id="demo" onclick="myFunction(this, 'green')">Click me to change my text color.</p>
+    </div>
+</body>
+</html>
